@@ -1,4 +1,23 @@
 .main {
     height: 100vh;
     background: #c46280;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    composes: container from "./Common.css";
+    justify-content: space-around;
+    align-items: center;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+}
+
+.photo {
+    background: #35a3c4;
+    height: 400px;
+    width: 300px;
 }

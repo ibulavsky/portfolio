@@ -1,4 +1,10 @@
 .header {
-    height: 100px;
+    composes: center from 'Common.css';
+    align-items: stretch;
+    height: 70px;
     background: #35a3c4;
+}
+
+.container {
+    composes: container from "./Common.css";
 }

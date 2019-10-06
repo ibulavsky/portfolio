@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import styles from './Greeting.module.css';
 
 function Greeting() {

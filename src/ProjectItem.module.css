@@ -1,0 +1,19 @@
+.project {
+    width: 400px;
+    background: blue;
+    display: flex;
+    flex-direction: column;
+}
+
+.image {
+    composes: center from 'Common.css';
+    height: 300px;
+    background: greenyellow;
+}
+
+
+@media screen and (max-width: 500px) {
+    .project {
+        width: 100%;
+    }
+}
