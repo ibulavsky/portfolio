@@ -1,0 +1,28 @@
+.skill {
+    width: 300px;
+    background: greenyellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon {
+    height: 80px;
+    width: 80px;
+    background: cornsilk;
+}
+
+.title {
+    composes: center from 'Common.css';
+    width: 100%;
+    border: 1px solid;
+}
+
+.description {
+    text-align: center;
+}
+@media screen and (max-width: 385px) {
+    .skill {
+        width: 100%;
+    }
+}

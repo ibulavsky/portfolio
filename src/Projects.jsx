@@ -11,8 +11,6 @@ function Projects() {
                 <div className={styles.wrapper}>
                     <ProjectItem title='Counter' description='UI -> React, BLL -> Redux'/>
                     <ProjectItem title='Counter' description='UI -> React, BLL -> Redux'/>
-                    <ProjectItem title='Counter' description='UI -> React, BLL -> Redux'/>
-                    <ProjectItem title='Counter' description='UI -> React, BLL -> Redux'/>
                     <ProjectItem title='TodoList' description='UI -> React, BLL -> Redux'/>
                     <ProjectItem title='SocialNetwork' description='UI -> React, BLL -> Redux'/>
                 </div>
