@@ -7,8 +7,8 @@ function ProjectItem(props) {
             <div className={styles.image}>
                 <a className={styles.showButton} href='/'>Смотреть</a>
             </div>
-          <span className={styles.title}>{props.title}</span>
-          <span className={styles.description}>{props.description}</span>
+            <span className={styles.title}>{props.title}</span>
+            <span className={styles.description}>{props.description}</span>
         </div>
     );
 }

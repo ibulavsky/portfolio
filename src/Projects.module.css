@@ -1,12 +1,11 @@
 .projects {
     min-height: 100vh;
-    background: #c40c8d;
-    composes: center from 'Common.css';
+    background: #1f1f20;
+    composes: center from 'common/Common.css';
     justify-content: center;
 }
 
 .container {
-    border: 1px solid;
     width: 80%;
     height: 100%;
     display: flex;
@@ -23,9 +22,8 @@
 }
 
 .title {
-    display: flex;
-    justify-content: center;
-    border: 1px solid;
+    composes: center upFont from 'common/Common.css';
+    height: 100px;
     width: 100%;
 }
 

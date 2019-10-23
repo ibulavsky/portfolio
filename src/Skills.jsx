@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import styles from './Skills.module.css';
 import SkillItem from "./SkillItem";
+import Title from "./common/Title";
 
 function Skills() {
 
@@ -24,11 +25,9 @@ function Skills() {
     return (
         <div className={styles.skills}>
             <div className={styles.container}>
-                <span className={styles.title}>
-                    My Skills
-                </span>
+               <Title title={'Мои навыки'} />
                 <div className={styles.items}>
-                    {skills.map( s=> <SkillItem title={s.title} description={s.description}/>)}
+                    {skills.map(s => <SkillItem title={s.title} description={s.description}/>)}
                 </div>
             </div>
         </div>

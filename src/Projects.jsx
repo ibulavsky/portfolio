@@ -1,13 +1,14 @@
 import React from 'react';
 import styles from './Projects.module.css';
 import ProjectItem from "./ProjectItem";
+import Title from "./common/Title";
 
 function Projects() {
 
     return (
         <div className={styles.projects}>
             <div className={styles.container}>
-                <span className={styles.title}>My Projects</span>
+                <Title title={'Мои проекты'} />
                 <div className={styles.wrapper}>
                     <ProjectItem title='Counter' description='UI -> React, BLL -> Redux'/>
                     <ProjectItem title='Counter' description='UI -> React, BLL -> Redux'/>

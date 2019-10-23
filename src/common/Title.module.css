@@ -1,0 +1,19 @@
+.headerTitle {
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    align-items: center;
+}
+
+.title {
+    composes: center upFont from 'Common.css';
+    width: 100%;
+}
+
+.line {
+    width: 55px;
+    height: 5px;
+    margin: 20px 0;
+    background-color: #001FDB;
+    /*border: 2px solid red;*/
+}

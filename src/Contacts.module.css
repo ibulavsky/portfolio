@@ -1,12 +1,13 @@
 .contacts {
     height: 100vh;
-    background: darkslategrey;
+    background: #1f1f20;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .container {
-    composes: container from 'Common.css';
+    composes: container from 'common/Common.css';
     flex-direction: column;
     padding: 80px 0;
 }
@@ -19,10 +20,16 @@
 }
 
 .button {
-    composes: button from 'Common.css';
+    composes: button from 'common/Common.css';
+}
+
+.inputForm {
+    margin: 10px 0;
+    padding: 10px;
 }
 
 .message {
+    margin: 10px 0;
     min-height: 160px;
     resize: vertical
 }

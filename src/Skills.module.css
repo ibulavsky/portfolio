@@ -1,21 +1,15 @@
 .skills {
-    composes: center from 'Common.css';
-    background: #2ec418;
+    composes: center from 'common/Common.css';
+    background: #252527;
     min-height: 100vh;
 }
 
 .container {
-    border: 1px solid;
-    display: flex;
     width: 80%;
     height: 100%;
+    display: flex;
     flex-direction: column;
-    padding: 100px 0;
-}
-
-.title {
-    composes: center from 'Common.css';
-    width: 100%;
+    justify-content: space-between;
 }
 
 .items {

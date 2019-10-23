@@ -1,5 +1,4 @@
 .container {
-    border: 1px solid;
     width: 80%;
     display: flex;
     justify-content: flex-end;
@@ -23,3 +22,17 @@
     justify-content: center;
     align-items: center;
 }
+
+.upFont {
+    color: #c4c300;
+    font-size: 25px;
+    font-family: 'Russo One', sans-serif;
+    line-height: 1.2;
+    letter-spacing: 5px;
+    font-weight: 300;
+    text-transform: capitalize;
+
+}
+
+
+

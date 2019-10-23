@@ -1,10 +1,14 @@
 .header {
-    composes: center from 'Common.css';
+    composes: center from 'common/Common.css';
     align-items: stretch;
     height: 70px;
-    background: #35a3c4;
+    background: deepskyblue;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    opacity: 0.9;
 }
 
 .container {
-    composes: container from "./Common.css";
+    composes: container from "common/Common.css";
 }
