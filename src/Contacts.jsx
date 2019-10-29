@@ -7,7 +7,7 @@ function Contacts() {
     return (
         <div className={styles.contacts}>
             <div className={styles.container}>
-                <Title title={'Связаться'} />
+                <Title title={'Contact'} />
                 <form className={styles.formWrapper}>
                     <input className={styles.inputForm} placeholder="Name"/>
                     <input className={styles.inputForm} placeholder="Email"/>

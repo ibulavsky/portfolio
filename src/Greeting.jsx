@@ -5,7 +5,7 @@ import Title from "./common/Title";
 function Greeting() {
   return (
     <div className={styles.greeting}>
-      <Title title={'Обо мне'} />
+      <Title title={'About me'} />
     </div>
   );
 }

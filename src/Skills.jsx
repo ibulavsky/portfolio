@@ -20,12 +20,24 @@ function Skills() {
             title: 'React',
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aam non, nulla optio pariatur porro quae quam'
         },
+        {
+            title: 'React',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aam non, nulla optio pariatur porro quae quam'
+        },
+        {
+            title: 'React',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aam non, nulla optio pariatur porro quae quam'
+        },
+        {
+            title: 'React',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aam non, nulla optio pariatur porro quae quam'
+        },
     ];
 
     return (
         <div className={styles.skills}>
             <div className={styles.container}>
-               <Title title={'Мои навыки'} />
+                <Title title={'My Skills'}/>
                 <div className={styles.items}>
                     {skills.map(s => <SkillItem title={s.title} description={s.description}/>)}
                 </div>

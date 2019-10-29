@@ -7,9 +7,9 @@ const Title = (props) => {
     return (
         <div className={styles.headerTitle}>
             <h2 className={styles.title}>
-                {props.title}
+                <b>{props.title}</b>
             </h2>
-            <div className={styles.line}> </div>
+            <div className={styles.line}></div>
         </div>
     )
 };
