@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import Header from "./Header";
-import Main from "./Main";
-import Skills from "./Skills";
-import Projects from "./Projects";
-import Greeting from "./Greeting";
-import Contacts from "./Contacts";
-import Footer from "./Footer";
+import Header from "./components/header/Header";
+import Main from "./components/main/Main";
+import Skills from "./components/skills/Skills";
+import Projects from "./components/projects/Projects";
+import AboutMe from "./components/aboutMe/AboutMe";
+import Contacts from "./components/contacts/Contacts";
+import Footer from "./components/footer/Footer";
 
 function App() {
     return (
@@ -16,7 +16,7 @@ function App() {
                 <Main />
                 <Skills />
                 <Projects />
-                <Greeting />
+                <AboutMe />
                 <Contacts />
                 <Footer />
             </div>

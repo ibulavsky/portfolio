@@ -4,8 +4,8 @@ import styles from './SkillItem.module.css';
 function SkillItem(props) {
     return (
         <div className={styles.skill}>
-            <div className={styles.icon}>
-                <img src='' alt='Skill Icon'/>
+            <div className={styles.iconWrapper}>
+                <img className={styles.imageIcon} src={props.icon} alt='Skill Icon'/>
             </div>
             <span className={styles.title}>
                 {props.title}

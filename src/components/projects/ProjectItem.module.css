@@ -1,0 +1,32 @@
+.project {
+    width: 400px;
+    background: #252527;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.image {
+    composes: center from '../../common/Common.css';
+    height: 300px;
+}
+
+.showButton {
+    text-align: center;
+    height: 30px;
+    width: 150px;
+    background: white;
+    border-radius: 10px;
+    color: #1A1A1A;
+    padding-top: 11px;
+    font-size: 18px;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 500px) {
+    .project {
+        width: 100%;
+    }
+}

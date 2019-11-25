@@ -1,7 +1,7 @@
 .projects {
     min-height: 100vh;
     background: #1f1f20;
-    composes: center from 'common/Common.css';
+    composes: center from '../../common/Common.css';
     justify-content: center;
 }
 
@@ -22,7 +22,7 @@
 }
 
 .title {
-    composes: center upFont from 'common/Common.css';
+    composes: center upFont from '../../common/Common.css';
     height: 100px;
     width: 100%;
 }

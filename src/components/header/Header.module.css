@@ -1,5 +1,5 @@
 .header {
-    composes: center from 'common/Common.css';
+    composes: center from '../../common/Common.css';
     align-items: stretch;
     height: 70px;
     background: #1A1A1A;
@@ -10,7 +10,7 @@
 }
 
 .container {
-    composes: container from "common/Common.css";
+    composes: container from "../../common/Common.css";
     width: 100%;
     /*width: 500px;*/
 }

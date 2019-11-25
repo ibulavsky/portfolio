@@ -3,8 +3,8 @@ import styles from './ProjectItem.module.css';
 
 function ProjectItem(props) {
     return (
-        <div className={styles.project} >
-            <div className={styles.image} style={{background: `${props.bg}`}}>
+        <div className={styles.project}>
+            <div className={styles.image} style={{background: (`url(${props.bg})`)}}>
                 <a className={styles.showButton} href='/'>Смотреть</a>
             </div>
             <span className={styles.title}>{props.title}</span>

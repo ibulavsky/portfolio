@@ -1,9 +1,8 @@
 import React from 'react';
 import styles from './Main.module.css';
-import myPhoto from './assets/Photo/myPhoto4.jpg'
+import myPhoto from '../../assets/Photo/white.bmp'
 
 function Main() {
-
     return (
         <div className={styles.main}>
             <div className={styles.container}>

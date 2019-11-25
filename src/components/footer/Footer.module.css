@@ -7,7 +7,7 @@
 }
 
 .container {
-    composes: container from "common/Common.css";
+    composes: container from "../../common/Common.css";
     flex-direction: column;
     /*padding: 80px 0;*/
 }
