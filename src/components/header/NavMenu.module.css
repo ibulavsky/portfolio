@@ -10,16 +10,17 @@
     align-items: center;
     height: 58px;
     width: 100%;
-    /*border: purple solid 2px;*/
     margin: 3px;
-    background-color: black;
+    background-color: #f3f3f3;
 }
 
 .linkWrapper:hover {
-    background-color: #202020;
+    background-color: #1f1f1f;
 }
 
-
+.link:hover {
+    color: #77DB04;
+}
 .link {
     display: flex;
     justify-content: center;
@@ -30,7 +31,7 @@
     font-size: 25px;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     /*font-family: "Droid Serif";*/
-    color: white;
+    color: #212121;
 }
 
 @media (max-width: 450px) {

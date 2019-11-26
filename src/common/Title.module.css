@@ -2,25 +2,18 @@
     display: flex;
     flex-direction: column;
     height: 100px;
-    /*justify-content: center;*/
     align-items: center;
-    /*margin: 20px 0;*/
-    /*border: 2px solid red;*/
 }
 
 .title {
     composes: center upFont from 'Common.css';
-
     width: 100%;
 }
 
 .line {
     width: 55px;
     height: 2px;
-    /*margin: 20px 0;*/
-    /*background-color: #001FDB;*/
-    background-color: maroon;
-    /*border: 2px solid red;*/
+    background-color: #77DB04;
 }
 
 

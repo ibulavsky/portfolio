@@ -3,17 +3,17 @@ import styles from './SkillItem.module.css';
 
 function SkillItem(props) {
     return (
-        <div className={styles.skill}>
-            <div className={styles.iconWrapper}>
+        <li className={styles.skill}>
+            <figure className={styles.iconWrapper}>
                 <img className={styles.imageIcon} src={props.icon} alt='Skill Icon'/>
-            </div>
-            <span className={styles.title}>
+            </figure>
+            <title className={styles.title}>
                 {props.title}
-            </span>
-            <span className={styles.description}>
+            </title>
+            <figcaption className={styles.description}>
                 {props.description}
-            </span>
-        </div>
+            </figcaption>
+        </li>
     );
 }
 

@@ -1,18 +1,20 @@
 import React from 'react';
-import logo from '../../logo.svg';
 import styles from './Skills.module.css';
 import SkillItem from "./SkillItem";
 import Title from "../../common/Title";
-import CSSIcon from "../../assets/Image/cssIcon.svg"
-import HTMLIcon from "../../assets/Image/htmlIcon.svg"
-import JSIcon from "../../assets/Image/jsItem.svg"
-import ReactIcon from "../../assets/Image/reactIcon.svg"
-import ReduxIcon from "../../assets/Image/reduxIcon.png"
+
+
+import CSSIcon from "../../assets/Image/cssBlackIcon.svg"
+import HTMLIcon from "../../assets/Image/htmlBlackIcon.svg"
+import JSIcon from "../../assets/Image/jsBlackItem.svg"
+import ReactIcon from "../../assets/Image/reactBlackIcon.svg"
+import ReduxIcon from "../../assets/Image/reduxBlackIcon.svg"
+import GitIcon from "../../assets/Image/githubBlackItem.svg"
 
 function Skills() {
 
     let skills = [
-                {
+        {
             title: 'JS',
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aam non, nulla optio pariatur porro quae quam.' +
                 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aam non, nulla optio pariatur porro quae quam',
@@ -38,6 +40,11 @@ function Skills() {
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aam non, nulla optio pariatur porro quae quam',
             icon: CSSIcon,
         },
+        {
+            title: 'GIT',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aam non, nulla optio pariatur porro quae quam',
+            icon: GitIcon,
+        },
 
     ];
 
@@ -45,9 +52,10 @@ function Skills() {
         <div className={styles.skills}>
             <div className={styles.container}>
                 <Title title={'My Skills'}/>
-                <div className={styles.items}>
-                    {skills.map(s => <SkillItem title={s.title} description={s.description} icon={s.icon}/>)}
-                </div>
+                <ul className={styles.items}>
+                    {skills.map((s, index) => (
+                        <SkillItem key={index} title={s.title} description={s.description} icon={s.icon}/>))}
+                </ul>
             </div>
         </div>
     );

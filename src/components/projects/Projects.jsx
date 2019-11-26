@@ -3,7 +3,6 @@ import styles from './Projects.module.css';
 import ProjectItem from "./ProjectItem";
 import Title from "../../common/Title";
 import CounterImg from "../../assets/Image/counter.PNG"
-import {CounterProject} from "../../assets/Image/bg-stars.jpg"
 
 function Projects() {
 

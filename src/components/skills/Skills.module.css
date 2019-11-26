@@ -1,10 +1,9 @@
 .skills {
-    /*composes: center from 'common/Common.css';*/
     display: flex;
     justify-content: center;
-    background: #252527;
+    background: white;
+    color: #212121;
     min-height: 100vh;
-
 }
 
 .container {
@@ -12,7 +11,6 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    /*justify-content: flex-end;*/
     align-items: center;
 }
 
@@ -20,21 +18,19 @@
     display: flex;
     width: 100%;
     padding-top: 20px;
+    padding-inline-start: 0;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
 @media screen and (max-width: 1150px) {
     .items {
-        /*flex-direction: column;*/
-        justify-content: space-between;
-        /*align-items: center;*/
+        justify-content: space-around;
     }
 }
 @media screen and (max-width: 775px) {
     .items {
         flex-direction: column;
-        /*justify-content: space-between;*/
         align-items: center;
     }
 }

@@ -2,7 +2,7 @@
     composes: center from '../../common/Common.css';
     align-items: stretch;
     height: 70px;
-    background: #1A1A1A;
+    background: white;
     position: fixed;
     width: 100%;
     z-index: 1;
@@ -12,5 +12,4 @@
 .container {
     composes: container from "../../common/Common.css";
     width: 100%;
-    /*width: 500px;*/
 }
