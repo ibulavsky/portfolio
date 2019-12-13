@@ -4,12 +4,12 @@ import SkillItem from "./SkillItem";
 import Title from "../../common/Title";
 
 
-import CSSIcon from "../../assets/Image/cssBlackIcon.svg"
-import HTMLIcon from "../../assets/Image/htmlBlackIcon.svg"
-import JSIcon from "../../assets/Image/jsBlackItem.svg"
-import ReactIcon from "../../assets/Image/reactBlackIcon.svg"
-import ReduxIcon from "../../assets/Image/reduxBlackIcon.svg"
-import GitIcon from "../../assets/Image/githubBlackItem.svg"
+import CSSIcon from "../../assets/Image/Icons/cssBlackIcon.svg"
+import HTMLIcon from "../../assets/Image/Icons/htmlBlackIcon.svg"
+import JSIcon from "../../assets/Image/Icons/jsBlackItem.svg"
+import ReactIcon from "../../assets/Image/Icons/reactBlackIcon.svg"
+import ReduxIcon from "../../assets/Image/Icons/reduxBlackIcon.svg"
+import GitIcon from "../../assets/Image/Icons/githubBlackItem.svg"
 
 function Skills() {
 
@@ -49,7 +49,7 @@ function Skills() {
     ];
 
     return (
-        <div className={styles.skills}>
+        <div id="skills" className={styles.skills}>
             <div className={styles.container}>
                 <Title title={'My Skills'}/>
                 <ul className={styles.items}>

@@ -28,7 +28,8 @@ class Contacts extends Component {
     render() {
         const status = this.state;
         return (
-            <div className={styles.contacts}>
+            <div id='mail'
+                     className={styles.contacts}>
                 <div className={styles.container}>
                     <Title title={'Contact'}/>
                     <form action="https://formspree.io/mkngweyz"

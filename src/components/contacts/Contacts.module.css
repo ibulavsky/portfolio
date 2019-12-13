@@ -1,39 +1,47 @@
 .contacts {
-    height: 100vh;
-    background: #1f1f20;
+    min-height: 100vh;
+    background: #f3f3f3;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .container {
     composes: container from '../../common/Common.css';
     flex-direction: column;
-    padding: 80px 0;
 }
 
 .formWrapper {
     display: flex;
     flex-direction: column;
-    /*width: 50%;*/
+    align-items: center;
     width: 500px;
 }
 
 .button {
     composes: button from '../../common/Common.css';
+    margin-top: 10px ;
+    border: none;
 }
 
-.inputForm {
+
+.inputForm, .message {
+    width: 100%;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 20px;
     margin: 10px 0;
     padding: 10px;
-    border-radius: 10px;
+    /*border-radius: 10px;*/
+}
+
+.inputForm, .message:focus {
+    outline: none;
 }
 
 .message {
-    margin: 10px 0;
     min-height: 160px;
     resize: vertical;
-    border-radius: 10px;
+    /*border-radius: 10px;*/
 }
 
 .notification {

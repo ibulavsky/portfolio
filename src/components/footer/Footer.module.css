@@ -1,28 +1,44 @@
 .footer {
     /*height: 300px;*/
-    background: #252527;
+    background: white;
     display: flex;
     justify-content: center;
-    color: #c4c300;
 }
 
 .container {
     composes: container from "../../common/Common.css";
+    align-items: center;
+    justify-content: flex-start;
     flex-direction: column;
-    /*padding: 80px 0;*/
+}
+
+.title {
+    /*padding-top: -80px;*/
+    margin-top: -80px;
 }
 
 .social {
     display: flex;
+    margin: 20px 0;
     justify-content: space-between;
     width: 500px;
-    /*border: 1px solid;*/
 }
 
 .icon {
     width: 80px;
     height: 80px;
     background: white;
+    position: relative;
+}
+
+.iconImg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.copyright {
+    margin: 10px 0;
 }
 
 @media screen and (max-width: 650px) {

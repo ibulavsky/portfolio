@@ -1,6 +1,6 @@
 .projects {
     min-height: 100vh;
-    background: #1f1f20;
+    background: #f3f3f3;
     composes: center from '../../common/Common.css';
     justify-content: center;
 }
@@ -18,7 +18,8 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-bottom: 80px;
 }
 
 .title {
@@ -27,7 +28,7 @@
     width: 100%;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 850px) {
     .wrapper {
         flex-direction: column;
         justify-content: center;

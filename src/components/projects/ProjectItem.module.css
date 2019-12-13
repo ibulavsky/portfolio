@@ -1,32 +1,69 @@
 .project {
-    width: 400px;
-    background: #252527;
-    color: white;
+    width: 300px;
+    height: max-content;
+    margin: 20px;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .image {
     composes: center from '../../common/Common.css';
     height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 300px;
+    border-radius: 10px;
+    background-color: black;
+    opacity: 0.5;
 }
 
 .showButton {
-    text-align: center;
-    height: 30px;
-    width: 150px;
-    background: white;
-    border-radius: 10px;
-    color: #1A1A1A;
-    padding-top: 11px;
-    font-size: 18px;
-    vertical-align: middle;
+    composes: button from './../../common/Common.css';
     text-decoration: none;
+    position: relative;
 }
 
+.title {
+    /*background-color: white;*/
+    /*text-align: center;*/
+    margin: 15px 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.description {
+    /*background-color: white;*/
+    margin: 0 15px 20px;
+    font-size: 18px;
+    /*text-align: center;*/
+    padding: 10px 0;
+}
 
 @media screen and (max-width: 500px) {
     .project {
         width: 100%;
     }
+
+    .image {
+        width: 100%;
+    }
+
+    .image:before {
+
+    }
+
 }

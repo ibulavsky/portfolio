@@ -1,18 +1,25 @@
 import React from 'react';
 import styles from './Footer.module.css';
 import Title from "../../common/Title";
+import telegram from '../../assets/Image/contacts/telegram.svg'
+import vk from '../../assets/Image/contacts/vk.svg'
+import linkedin from '../../assets/Image/contacts/linkedin.svg'
+import github from '../../assets/Image/contacts/github.svg'
+import SocialIcon from "./SocialIcon"
+
 
 function Footer() {
     return (
-        <div className={styles.footer}>
+        <div id='social' className={styles.footer}>
             <div className={styles.container}>
-                <Title title={'Social'}/>
-                {/*<span className={styles.title}>Булавский Игорь</span>*/}
+                <div className={styles.title}>
+                    <Title title={'Social'}/>
+                </div>
                 <div className={styles.social}>
-                    <div className={styles.icon}>VK</div>
-                    <div className={styles.icon}>LIn</div>
-                    <div className={styles.icon}>CodWars</div>
-                    <div className={styles.icon}>Git</div>
+                   <SocialIcon icon={telegram} link={'https://t.me/ibulavsky'}/>
+                   <SocialIcon icon={vk} link={'https://vk.com/igor_bulavsky'}/>
+                   <SocialIcon icon={linkedin} link={'https://www.linkedin.com/in/igor-bulavsky-a8b8b0169'}/>
+                   <SocialIcon icon={github} link={'https://github.com/ibulavsky'}/>
                 </div>
                 <span className={styles.copyright}>2019 © All rights reserved.</span>
             </div>
