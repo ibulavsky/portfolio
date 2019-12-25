@@ -1,22 +1,20 @@
 import React from 'react';
 import styles from './Main.module.css';
-import myPhoto from '../../assets/Photo/myPhoto4.jpg'
+import myPhoto from '../../assets/Photo/myPhotoRick.jpg'
 
-function Main() {
-    return (
-        <div id="main" className={styles.main}>
-            <div className={styles.container}>
-                <div className={styles.description}>
-                    <span>May the <label>Force</label> be with you!</span>
-                    <span>I'm <label>Igor Bulavsky</label></span>
-                    <h1>Front-end developer </h1>
-                </div>
-                <div className={styles.photo}>
-                    <img src={myPhoto} alt={"I'am"}/>
-                </div>
+const Main = () => (
+    <div id="main" className={styles.main}>
+        <div className={styles.container}>
+            <div className={styles.description}>
+                <span>May the <label>Force</label> be with you!</span>
+                <span>I'm <label>Igor Bulavsky</label></span>
+                <h1>Front-end developer </h1>
+            </div>
+            <div className={styles.photo}>
+                <img src={myPhoto} alt={"I'am"}/>
             </div>
         </div>
-    );
-}
+    </div>
+)
 
 export default Main;

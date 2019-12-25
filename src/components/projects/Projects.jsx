@@ -1,26 +1,27 @@
 import React from 'react';
+import Fade from 'react-reveal/Fade';
 import styles from './Projects.module.css';
 import ProjectItem from "./ProjectItem";
 import Title from "../../common/Title";
-import CounterImg from "../../assets/Image/counterIcon.svg"
-import WishesListsImg from "../../assets/Image/projects/whishesList.jpg"
+import {useSelector} from "react-redux"
 
-function Projects() {
+const Projects = () => {
+
+    const projects = useSelector(state => state.projects.projects);
 
     return (
         <div id="projects" className={styles.projects}>
-            <div className={styles.container}>
-                <Title title={'My projects'}/>
-                <div className={styles.wrapper}>
-                    <ProjectItem title='Counter' bg={CounterImg} description='UI -> React, BLL -> Redux'/>
-                    <ProjectItem title='Counter' description='Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                     Eaque eum nostrum officia similique. Aliquam dolor
-    dolorum exercitationem hic laborum natus nihil, odit pariatur, perferendis qui, similique ullam unde voluptatem
-    voluptatibus.'/>
-                    <ProjectItem title='WishesList' bg={WishesListsImg} description='UI -> React, BLL -> Redux'/>
-                    <ProjectItem title='SocialNetwork' description='UI -> React, BLL -> Redux'/>
+            <Fade left>
+                <div className={styles.container}>
+                    <Title title={'My projects'}/>
+                    <div className={styles.wrapper}>
+                        {
+                            projects.map(p => <ProjectItem title={p.title} bg={p.bg}
+                                                           description={p.description}/>)
+                        }
+                    </div>
                 </div>
-            </div>
+            </Fade>
         </div>
     );
 }

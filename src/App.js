@@ -7,21 +7,21 @@ import Projects from "./components/projects/Projects";
 import AboutMe from "./components/aboutMe/AboutMe";
 import Contacts from "./components/contacts/Contacts";
 import Footer from "./components/footer/Footer";
+import ParticlesContainer from "./common/ParticlesContainer"
 
-function App() {
-    return (
-        <div className="App">
-            <div className="portfolio">
-                <Header />
-                <Main />
-                <Skills />
-                <Projects />
-                <AboutMe />
-                <Contacts />
-                <Footer />
-            </div>
+const App = () => (
+    <div className="App">
+        <div className="portfolio">
+            <ParticlesContainer/>
+            <Header/>
+            <Main/>
+            <Skills/>
+            <Projects/>
+            <AboutMe/>
+            <Contacts/>
+            <Footer/>
         </div>
-    );
-}
+    </div>
+)
 
 export default App;

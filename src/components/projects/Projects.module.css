@@ -3,6 +3,7 @@
     background: #f3f3f3;
     composes: center from '../../common/Common.css';
     justify-content: center;
+    /*position: relative;*/
 }
 
 .container {

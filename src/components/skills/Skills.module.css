@@ -1,6 +1,7 @@
 .skills {
     display: flex;
     justify-content: center;
+    /*position: relative;*/
     background: white;
     color: #212121;
     min-height: 100vh;
@@ -28,6 +29,7 @@
         justify-content: space-around;
     }
 }
+
 @media screen and (max-width: 775px) {
     .items {
         flex-direction: column;

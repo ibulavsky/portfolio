@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Fade from 'react-reveal/Fade';
 import styles from './Contacts.module.css';
 import Title from "../../common/Title";
 
@@ -29,23 +30,25 @@ class Contacts extends Component {
         const status = this.state;
         return (
             <div id='mail'
-                     className={styles.contacts}>
-                <div className={styles.container}>
-                    <Title title={'Contact'}/>
-                    <form action="https://formspree.io/mkngweyz"
-                          method="POST"
-                          className={styles.formWrapper}
-                          onSubmit={this.submitForm}
-                    >
-                        <input type="text" name="name" className={styles.inputForm} placeholder="Name"/>
-                        <input type="email" name="_replyto" className={styles.inputForm} placeholder="Email"/>
-                        <textarea name="message" className={styles.message} placeholder="Please, write message."/>
-                        {status === "SUCCESS" ? <p className={styles.notification}>Thanks!</p>
-                            : <button className={styles.button} type="submit"> Send</button>}
-                        {status === "ERROR" &&
-                        <p className={styles.notification}>Oops! Error.</p>}
-                    </form>
-                </div>
+                 className={styles.contacts}>
+                <Fade left>
+                    <div className={styles.container}>
+                        <Title title={'Contact'}/>
+                        <form action="https://formspree.io/mkngweyz"
+                              method="POST"
+                              className={styles.formWrapper}
+                              onSubmit={this.submitForm}
+                        >
+                            <input type="text" name="name" className={styles.inputForm} placeholder="Name"/>
+                            <input type="email" name="_replyto" className={styles.inputForm} placeholder="Email"/>
+                            <textarea name="message" className={styles.message} placeholder="Please, write message."/>
+                            {status === "SUCCESS" ? <p className={styles.notification}>Thanks!</p>
+                                : <button className={styles.button} type="submit"> Send</button>}
+                            {status === "ERROR" &&
+                            <p className={styles.notification}>Oops! Error.</p>}
+                        </form>
+                    </div>
+                </Fade>
             </div>
         );
     }
