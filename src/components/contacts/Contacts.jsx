@@ -14,24 +14,23 @@ class Contacts extends Component {
         const xhr = new XMLHttpRequest();
         xhr.open(form.method, form.action);
         xhr.setRequestHeader("Accept", "application/json");
-        // xhr.onreadystatechange = () => {
-        //     if (xhr.readyState !== XMLHttpRequest.DONE) return;
-        //     // if (xhr.status === 200) {
-        //     //     // form.reset();
-        //     //     // this.setState({status: "SUCCESS"});
-        //     // } else {
-        //     //     // this.setState({status: "ERROR"});
-        //     // }
-        // };
+        xhr.onreadystatechange = () => {
+            if (xhr.readyState !== XMLHttpRequest.DONE) return;
+            if (xhr.status === 200) {
+                form.reset();
+                this.setState({status: "SUCCESS"});
+            } else {
+                this.setState({status: "ERROR"});
+            }
+        };
         xhr.send(data);
     }
 
     render() {
-        const status = this.state;
+        const status = this.state.status;
         return (
-            <div id='mail'
-                 className={styles.contacts}>
-                <Fade left>
+            <Fade bottom>
+                <div id='mail' className={styles.contacts}>
                     <div className={styles.container}>
                         <Title title={'Contact'}/>
                         <form action="https://formspree.io/mkngweyz"
@@ -48,8 +47,8 @@ class Contacts extends Component {
                             <p className={styles.notification}>Oops! Error.</p>}
                         </form>
                     </div>
-                </Fade>
-            </div>
+                </div>
+            </Fade>
         );
     }
 

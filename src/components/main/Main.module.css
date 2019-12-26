@@ -29,6 +29,11 @@
     height: 400px;
     width: 300px;
     position: relative;
+    transition: 500ms
+}
+
+.photo:hover {
+    transform: scale(1.1, 1.1)
 }
 
 .photo img {

@@ -4,17 +4,20 @@ import styles from './AboutMe.module.css';
 import Title from "../../common/Title";
 
 const AboutMe = () => (
-    <div id='about' className={styles.greeting}>
-        <Fade right>
+    <Fade bottom>
+        <div id='about' className={styles.greeting}>
             <Title title={'About me'}/>
-            <div className={styles.description}> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            {/*<img src={''} className={styles.photo}/>*/}
+            <div className={styles.description}>
+                <p>My name is Igor. I'm 25 years old.</p>
+                <p>I graduated from Belarussian National Technical University in 2016. I am working as design
+                    engineer.</p>
+                <p>I fond of front-end development. I am attending courses, which called "it-incubator". I know js,
+                    typescript, react, css.</p>
+                <p>Also I like to spend free time with my friends. </p>
             </div>
-        </Fade>
-    </div>
+        </div>
+    </Fade>
 )
 
 export default AboutMe;

@@ -31,6 +31,10 @@
     position: relative;
 }
 
+.icon:hover {
+    cursor: auto;
+}
+
 .iconImg {
     position: absolute;
     height: 100%;

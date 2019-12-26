@@ -6,6 +6,7 @@ import SkillItem from "./SkillItem";
 import Title from "../../common/Title";
 
 import {useSelector} from "react-redux"
+import {animation} from "react-reveal/src/lib/globals"
 
 
 const Skills = () => {
@@ -14,7 +15,7 @@ const Skills = () => {
 
     return (
         <div id="skills" className={styles.skills}>
-            <Fade right>
+            <Fade bottom>
                 <div className={styles.container}>
                     <Title title={'My Skills'}/>
                     <ul className={styles.items}>
