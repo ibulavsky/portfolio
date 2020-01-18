@@ -1,6 +1,6 @@
 import React from "react"
 
-import CounterImg from "../assets/Image/counterIcon.svg"
+import CounterImg from "../assets/Image/projects/counterIcon.svg"
 import WishesListsImg from "../assets/Image/projects/whishesList.jpg"
 import AuthenticationImg from '../assets/Image/projects/authentication.png'
 
