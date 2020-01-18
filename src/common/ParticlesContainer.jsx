@@ -13,7 +13,7 @@ const ParticlesContainer = (props) => {
                     shape: {
                         type: "circle",
                         stroke: {width: 0, color: "#222"},
-                        polygon: {"nb_sides": 5},
+                        polygon: {nb_sides: 5},
                     },
                     opacity: {
                         value: 0.3,

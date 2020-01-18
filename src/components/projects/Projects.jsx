@@ -10,8 +10,8 @@ const Projects = () => {
     const projects = useSelector(state => state.projects.projects);
 
     return (
-        <Fade bottom>
-            <div id="projects" className={styles.projects}>
+        <div id="projects" className={styles.projects}>
+            <Fade bottom>
                 <div className={styles.container}>
                     <Title title={'My projects'}/>
                     <div className={styles.wrapper}>
@@ -21,8 +21,9 @@ const Projects = () => {
                         }
                     </div>
                 </div>
-            </div>
-        </Fade>
+            </Fade>
+        </div>
+
     );
 }
 

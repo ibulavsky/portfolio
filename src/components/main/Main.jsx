@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Main.module.css';
-import myPhoto from '../../assets/Photo/myPhotoRick.jpg'
+import myPhoto from '../../assets/Photo/my_Photo.jpg'
 
 const Main = () => (
     <div id="main" className={styles.main}>
@@ -11,7 +11,7 @@ const Main = () => (
                 <h1>Front-end developer </h1>
             </div>
             <div className={styles.photo}>
-                <img src={myPhoto} alt={"I'am"}/>
+                <img src={myPhoto} alt={"Photo"}/>
             </div>
         </div>
     </div>

@@ -19,7 +19,7 @@
     align-items: center;
 }
 
-.image:before {
+.image:hover:before {
     content: '';
     position: absolute;
     top: 0;
@@ -35,6 +35,7 @@
     composes: button from './../../common/Common.css';
     text-decoration: none;
     position: relative;
+    /*opacity: 0.5;*/
 }
 
 .title {

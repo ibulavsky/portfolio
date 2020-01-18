@@ -29,8 +29,8 @@ class Contacts extends Component {
     render() {
         const status = this.state.status;
         return (
-            <Fade bottom>
-                <div id='mail' className={styles.contacts}>
+            <div id='mail' className={styles.contacts}>
+                <Fade bottom>
                     <div className={styles.container}>
                         <Title title={'Contact'}/>
                         <form action="https://formspree.io/mkngweyz"
@@ -47,8 +47,9 @@ class Contacts extends Component {
                             <p className={styles.notification}>Oops! Error.</p>}
                         </form>
                     </div>
-                </div>
-            </Fade>
+                </Fade>
+            </div>
+
         );
     }
 

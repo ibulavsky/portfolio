@@ -1,11 +1,17 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styles from './SkillItem.module.css';
 
-function SkillItem(props) {
+const SkillItem = (props) => {
+
+    const [currentIcon, setIcon] = useState(props.icon)
+
     return (
         <li className={styles.skill}>
             <figure className={styles.iconWrapper}>
-                <img className={styles.imageIcon} src={props.icon} alt='Skill Icon'/>
+                <img className={styles.imageIcon} src={currentIcon}
+                     onMouseEnter={() => setIcon(props.blackIcon)}
+                     onMouseLeave={() => setIcon(props.icon)}
+                     alt='Skill Icon'/>
             </figure>
             <title className={styles.title}>
                 {props.title}

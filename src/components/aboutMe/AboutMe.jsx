@@ -4,8 +4,8 @@ import styles from './AboutMe.module.css';
 import Title from "../../common/Title";
 
 const AboutMe = () => (
-    <Fade bottom>
         <div id='about' className={styles.greeting}>
+            <Fade bottom>
             <Title title={'About me'}/>
             {/*<img src={''} className={styles.photo}/>*/}
             <div className={styles.description}>
@@ -16,8 +16,8 @@ const AboutMe = () => (
                     typescript, react, css.</p>
                 <p>Also I like to spend free time with my friends. </p>
             </div>
+            </Fade>
         </div>
-    </Fade>
 )
 
 export default AboutMe;

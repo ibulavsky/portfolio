@@ -1,9 +1,16 @@
-import JSIcon from "../assets/Image/Icons/jsBlackItem.svg"
-import ReactIcon from "../assets/Image/Icons/reactBlackIcon.svg"
-import ReduxIcon from "../assets/Image/Icons/reduxBlackIcon.svg"
-import HTMLIcon from "../assets/Image/Icons/htmlBlackIcon.svg"
-import CSSIcon from "../assets/Image/Icons/cssBlackIcon.svg"
-import GitIcon from "../assets/Image/Icons/githubBlackItem.svg"
+import JSIcon from "../assets/Image/Icons/whiteIcon/jsWhiteItem.gif"
+import ReactIcon from "../assets/Image/Icons/whiteIcon/reactWhiteIcon.gif"
+import ReduxIcon from "../assets/Image/Icons/whiteIcon/reduxWhiteIcon.gif"
+import HTMLIcon from "../assets/Image/Icons/whiteIcon/htmlWhiteIcon.gif"
+import CSSIcon from "../assets/Image/Icons/whiteIcon/cssWhiteIcon.gif"
+import GitIcon from "../assets/Image/Icons/whiteIcon/githubWhiteItem.gif"
+
+import JSBlackIcon from "../assets/Image/Icons/blackIcon/jsBlackItem.gif"
+import ReactBlackIcon from "../assets/Image/Icons/blackIcon/reactBlackIcon.gif"
+import ReduxBlackIcon from "../assets/Image/Icons/blackIcon/reduxBlackIcon.gif"
+import HTMLBlackIcon from "../assets/Image/Icons/blackIcon/htmlBlackIcon.gif"
+import CSSBlackIcon from "../assets/Image/Icons/blackIcon/cssBlackIcon.gif"
+import GitBlackIcon from "../assets/Image/Icons/blackIcon/githubBlackItem.gif"
 
 export const SET_SKILL = 'PORTFOLIO/SET_SKILL';
 
@@ -11,34 +18,39 @@ const initialState = {
     skills: [
         {
             title: 'JS',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aam non, nulla optio pariatur porro quae quam.' +
-                'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aam non, nulla optio pariatur porro quae quam',
-            icon: JSIcon
+            description: '',
+            icon: JSIcon,
+            blackIcon: JSBlackIcon
         },
         {
             title: 'React',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aam non, nulla optio pariatur porro quae quam',
+            description: '',
             icon: ReactIcon,
+            blackIcon: ReactBlackIcon,
         },
         {
             title: 'Redux',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aam non, nulla optio pariatur porro quae quam',
+            description: '',
             icon: ReduxIcon,
+            blackIcon: ReduxBlackIcon
         },
         {
             title: 'HTML',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aam non, nulla optio pariatur porro quae quam',
-            icon: HTMLIcon
+            description: '',
+            icon: HTMLIcon,
+            blackIcon: HTMLBlackIcon,
         },
         {
             title: 'CSS',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aam non, nulla optio pariatur porro quae quam',
+            description: '',
             icon: CSSIcon,
+            blackIcon: CSSBlackIcon,
         },
         {
             title: 'GIT',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aam non, nulla optio pariatur porro quae quam',
+            description: '',
             icon: GitIcon,
+            blackIcon: GitBlackIcon,
         },
     ]
 };

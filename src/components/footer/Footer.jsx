@@ -10,25 +10,23 @@ import github from '../../assets/Image/contacts/github.svg'
 import SocialIcon from "./SocialIcon"
 
 
-function Footer() {
-    return (
+const Footer = () => (
+    <div id='social' className={styles.footer}>
         <Fade clear>
-            <div id='social' className={styles.footer}>
-                <div className={styles.container}>
-                    <div className={styles.title}>
-                        <Title title={'Social'}/>
-                    </div>
-                    <div className={styles.social}>
-                        <SocialIcon icon={telegram} link={'https://t.me/ibulavsky'}/>
-                        <SocialIcon icon={vk} link={'https://vk.com/igor_bulavsky'}/>
-                        <SocialIcon icon={linkedin} link={'https://www.linkedin.com/in/igor-bulavsky-a8b8b0169'}/>
-                        <SocialIcon icon={github} link={'https://github.com/ibulavsky'}/>
-                    </div>
-                    <span className={styles.copyright}>2019 © All rights reserved.</span>
+            <div className={styles.container}>
+                <div className={styles.title}>
+                    <Title title={'Social'}/>
                 </div>
+                <div className={styles.social}>
+                    <SocialIcon icon={telegram} link={'https://t.me/ibulavsky'}/>
+                    <SocialIcon icon={vk} link={'https://vk.com/igor_bulavsky'}/>
+                    <SocialIcon icon={linkedin} link={'https://www.linkedin.com/in/igor-bulavsky-a8b8b0169'}/>
+                    <SocialIcon icon={github} link={'https://github.com/ibulavsky'}/>
+                </div>
+                <span className={styles.copyright}>2019 © All rights reserved.</span>
             </div>
         </Fade>
-    );
-}
+    </div>
+);
 
 export default Footer;

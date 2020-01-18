@@ -27,15 +27,19 @@
 .icon {
     width: 80px;
     height: 80px;
+    border-radius: 50px;
     background: white;
     position: relative;
+    transition: 500ms
 }
 
 .icon:hover {
     cursor: auto;
+    transform: scale(1.1, 1.1);
 }
 
 .iconImg {
+    border-radius: 50px;
     position: absolute;
     height: 100%;
     width: 100%;

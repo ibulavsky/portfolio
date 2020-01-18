@@ -6,7 +6,7 @@ import SkillItem from "./SkillItem";
 import Title from "../../common/Title";
 
 import {useSelector} from "react-redux"
-import {animation} from "react-reveal/src/lib/globals"
+// import {animation} from "react-reveal/src/lib/globals"
 
 
 const Skills = () => {
@@ -20,7 +20,7 @@ const Skills = () => {
                     <Title title={'My Skills'}/>
                     <ul className={styles.items}>
                         {skills.map((s, index) => (
-                            <SkillItem key={index} title={s.title} description={s.description} icon={s.icon}/>))}
+                            <SkillItem key={index} title={s.title} description={s.description} icon={s.icon} blackIcon={s.blackIcon}/>))}
                     </ul>
                 </div>
             </Fade>
