@@ -2,6 +2,7 @@ import React from "react"
 
 import CounterImg from "../assets/Image/counterIcon.svg"
 import WishesListsImg from "../assets/Image/projects/whishesList.jpg"
+import AuthenticationImg from '../assets/Image/projects/authentication.png'
 
 
 export const SET_PROJECT = 'PORTFOLIO/SET_PROJECT';
@@ -9,20 +10,46 @@ export const SET_PROJECT = 'PORTFOLIO/SET_PROJECT';
 const initialState = {
     projects: [
         {
+            title: 'WishesList (localStorage)',
+            bg: WishesListsImg,
+            url: 'https://ibulavsky.github.io/wishes-lists/',
+            gitUrl: 'https://github.com/ibulavsky/wishes-lists',
+            description: <>
+                This project implements wishes lists.
+                User's data is stored in <b>localStorage</b>. This project uses <b>Ant.design</b>.
+                The UI is implemented on functional components with <b>hooks</b> of <b>react</b>.
+                <b> Redux</b> is the bll level.</>
+        },
+        {
+            title: 'WishesList',
+            bg: WishesListsImg,
+            description: 'UI -> React, BLL -> Redux'
+        },
+        {
+            title: 'Authentication',
+            bg: AuthenticationImg,
+            url: 'https://ibulavsky.github.io/authentication/',
+            gitUrl: 'https://github.com/ibulavsky/authentication',
+            description: <>
+                This project implements user authentication based on a request to a pseudo-API (login:
+                Admin, password: 111111).
+                User data (token) is stored in <b>localStorage</b>. "Endless" scrolling (with loading of the following
+                posts). The UI is implemented on the class and functional components of <b>react</b>.
+                The <b>axios</b> library is used for ajax requests, and <b>redux</b> is the bll level.</>
+        },
+        {
             title: 'Counter',
             bg: CounterImg,
-            description: 'UI -> React, BLL -> Redux'
+            url: 'https://ibulavsky.github.io/easy-counter/',
+            gitUrl: 'https://github.com/ibulavsky/easy-counter',
+            description: <>
+                This is one of my first projects.
+                This project implements counter. You can change the maximum and minimum value.
+                The UI is implemented on the class and functional components of <b>react</b>.
+                <b> Redux</b> is the bll level.</>,
         },
-        {
-            title: 'WishesList',
-            bg: WishesListsImg,
-            description: 'UI -> React, BLL -> Redux'
-        },
-        {
-            title: 'WishesList',
-            bg: WishesListsImg,
-            description: 'UI -> React, BLL -> Redux'
-        }
+
+
     ]
 };
 

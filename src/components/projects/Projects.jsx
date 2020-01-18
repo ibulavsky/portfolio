@@ -17,6 +17,7 @@ const Projects = () => {
                     <div className={styles.wrapper}>
                         {
                             projects.map(p => <ProjectItem title={p.title} bg={p.bg}
+                                                           url={p.url} gitLink={p.gitUrl}
                                                            description={p.description}/>)
                         }
                     </div>
