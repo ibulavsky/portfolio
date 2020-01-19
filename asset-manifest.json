@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.117cc329.chunk.css",
-    "main.js": "/portfolio/static/js/main.ceb7b576.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.ceb7b576.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.7016ba61.chunk.css",
+    "main.js": "/portfolio/static/js/main.360f47d2.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.360f47d2.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.7676bd13.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.7676bd13.js.map",
     "static/js/2.1d3d695c.chunk.js": "/portfolio/static/js/2.1d3d695c.chunk.js",
     "static/js/2.1d3d695c.chunk.js.map": "/portfolio/static/js/2.1d3d695c.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.869fcba249c40040e0e201b13a41c299.js": "/portfolio/precache-manifest.869fcba249c40040e0e201b13a41c299.js",
+    "precache-manifest.3c72a54c3d609a153da5e9f3bad67af9.js": "/portfolio/precache-manifest.3c72a54c3d609a153da5e9f3bad67af9.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.117cc329.chunk.css.map": "/portfolio/static/css/main.117cc329.chunk.css.map",
+    "static/css/main.7016ba61.chunk.css.map": "/portfolio/static/css/main.7016ba61.chunk.css.map",
     "static/media/authentication.png": "/portfolio/static/media/authentication.df1ecfed.png",
     "static/media/counterIcon.svg": "/portfolio/static/media/counterIcon.ae593da5.svg",
     "static/media/github.svg": "/portfolio/static/media/github.ba679906.svg",
     "static/media/linkedin.svg": "/portfolio/static/media/linkedin.02ec16b9.svg",
-    "static/media/my_Photo.jpg": "/portfolio/static/media/my_Photo.ce2c04bf.jpg",
+    "static/media/myPhoto.jpg": "/portfolio/static/media/myPhoto.39302792.jpg",
     "static/media/reduxBlackIcon.gif": "/portfolio/static/media/reduxBlackIcon.503a4e7b.gif",
     "static/media/reduxWhiteIcon.gif": "/portfolio/static/media/reduxWhiteIcon.465c124d.gif",
     "static/media/telegram.svg": "/portfolio/static/media/telegram.7e7271d2.svg",
@@ -25,7 +25,7 @@
   "entrypoints": [
     "static/js/runtime-main.7676bd13.js",
     "static/js/2.1d3d695c.chunk.js",
-    "static/css/main.117cc329.chunk.css",
-    "static/js/main.ceb7b576.chunk.js"
+    "static/css/main.7016ba61.chunk.css",
+    "static/js/main.360f47d2.chunk.js"
   ]
 }
