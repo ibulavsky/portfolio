@@ -3,6 +3,7 @@ import React from "react"
 import CounterImg from "../assets/Image/projects/counterIcon.svg"
 import WishesListsImg from "../assets/Image/projects/whishesList.jpg"
 import AuthenticationImg from '../assets/Image/projects/authentication.png'
+import SocialNetworkImg from '../assets/Image/projects/socialNetwork.jpg'
 
 
 export const SET_PROJECT = 'PORTFOLIO/SET_PROJECT';
@@ -24,6 +25,16 @@ const initialState = {
             title: 'WishesList',
             bg: WishesListsImg,
             description: 'UI -> React, BLL -> Redux'
+        },
+        {
+            title: 'Social Network',
+            bg: SocialNetworkImg,
+            url: 'https://ibulavsky.github.io/social-network-react/',
+            gitUrl: 'https://github.com/ibulavsky/social-network-react',
+            description: <>
+                This project implements social network.
+                The UI is implemented on the class and functional components with hooks of <b>react</b>.
+                The <b>axios</b> library is used for ajax requests, and <b>redux</b> is the bll level.</>
         },
         {
             title: 'Authentication',
