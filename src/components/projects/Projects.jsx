@@ -16,7 +16,7 @@ const Projects = () => {
                     <Title title={'My projects'}/>
                     <div className={styles.wrapper}>
                         {
-                            projects.map(p => <ProjectItem title={p.title} bg={p.bg}
+                            projects.map((p, index) => <ProjectItem key={index} title={p.title} bg={p.bg}
                                                            url={p.url} gitLink={p.gitUrl}
                                                            description={p.description}/>)
                         }

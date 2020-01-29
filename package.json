@@ -2,9 +2,10 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "http://ibulavsky.github.io/portfolio",
+  "homepage": "http://ibulavsky.github.io/portfolio",
   "dependencies": {
     "react": "^16.10.1",
+    "react-burger-menu": "^2.6.13",
     "react-dom": "^16.10.1",
     "react-particles-js": "^2.7.0",
     "react-redux": "^7.1.3",

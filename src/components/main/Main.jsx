@@ -11,7 +11,7 @@ const Main = () => (
                 <h1>Front-end developer </h1>
             </div>
             <div className={styles.photo}>
-                <img src={myPhoto} alt={"Photo"}/>
+                <img src={myPhoto} alt={"Igor"}/>
             </div>
         </div>
     </div>
