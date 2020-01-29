@@ -10,7 +10,7 @@ const AboutMe = () => (
             <Title title={'About me'}/>
             <div className={styles.description}>
                 <img alt='Igor' src={myPhoto} className={styles.photo}/>
-                <div>My name is Igor. I'm 25 years old.
+                <div align='justify'>My name is Igor. I'm 25 years old.
                     I graduated from Belarussian National Technical University in 2016. I am working as design
                     engineer.
                     I fond of front-end development. I am attending courses, which called "it-incubator". I know js,

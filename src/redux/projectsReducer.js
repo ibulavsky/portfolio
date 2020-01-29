@@ -4,12 +4,18 @@ import CounterImg from "../assets/Image/projects/counterIcon.svg"
 import WishesListsImg from "../assets/Image/projects/whishesList.jpg"
 import AuthenticationImg from '../assets/Image/projects/authentication.png'
 import SocialNetworkImg from '../assets/Image/projects/socialNetwork.jpg'
+import TemplatesTypesriptImg from '../assets/Image/projects/templateTypescript.png'
 
 
 export const SET_PROJECT = 'PORTFOLIO/SET_PROJECT';
 
 const initialState = {
     projects: [
+        {
+            title: 'WishesList',
+            bg: WishesListsImg,
+            description: 'UI -> React, BLL -> Redux'
+        },
         {
             title: 'WishesList (localStorage)',
             bg: WishesListsImg,
@@ -22,9 +28,15 @@ const initialState = {
                 <b> Redux</b> is the bll level.</>
         },
         {
-            title: 'WishesList',
-            bg: WishesListsImg,
-            description: 'UI -> React, BLL -> Redux'
+            title: 'Templates (typescript)',
+            bg: TemplatesTypesriptImg,
+            url: 'https://github.com/ibulavsky/register_login',
+            gitUrl: 'https://github.com/ibulavsky/register_login',
+            description: <>
+                This project implements templates (login, register, forgot, modals, table pages ) .
+                User's data is stored on <b>heroku hosting</b>. This project uses <b>typescript</b>.
+                The UI is implemented on functional components with <b>hooks</b> of <b>react</b>.
+                <b>Redux</b> is the bll level.</>
         },
         {
             title: 'Social Network',
