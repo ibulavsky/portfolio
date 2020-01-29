@@ -1,13 +1,24 @@
 import React from 'react';
 import styles from './NavMenu.module.css';
 
-function NavMenu() {
+export const navArr = [
+    {id: 1, navName: `Main`, path: `#main`},
+    {id: 2, navName: `Skills`, path: `#skills`},
+    {id: 3, navName: `Projects`, path: `#projects`},
+    {id: 4, navName: `About me`, path: `#aboutme`},
+    {id: 5, navName: `Contact`, path: `#mail`}
+];
+
+const NavMenu = () => {
+
+    const navLinks = navArr.map(link => (
+        <div key={link.id} className={styles.linkWrapper}>
+            <a href={link.path} className={styles.link}>{link.navName}</a>
+        </div>))
+
     return (
         <div className={styles.navMenu}>
-            <div className={styles.linkWrapper} ><a href="#main" className={styles.link}>Main</a></div>
-            <div className={styles.linkWrapper}><a href="#skills" className={styles.link}>Skills</a></div>
-            <div className={styles.linkWrapper}><a href="#projects" className={styles.link}>Projects</a></div>
-            <div className={styles.linkWrapper}><a href="#mail" className={styles.link}>Contacts</a></div>
+            {navLinks}
         </div>
     );
 }

@@ -1,5 +1,4 @@
 .navMenu {
-    width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -8,19 +7,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 58px;
+    height: 30px;
     width: 100%;
-    margin: 3px;
     background-color: #f3f3f3;
-}
-
-.linkWrapper:hover {
-    background-color: #1f1f1f;
 }
 
 .link:hover {
     color: #77DB04;
+    background-color: #1f1f1f;
 }
+
 .link {
     display: flex;
     justify-content: center;
@@ -28,20 +24,12 @@
     text-decoration: none;
     width: 100%;
     height: 100%;
-    font-size: 25px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 18px;
     font-family: 'M PLUS Rounded 1c', sans-serif;
+    white-space: nowrap;
     /*font-family: "Droid Serif";*/
     color: #212121;
-}
-
-@media (max-width: 450px) {
-.link {
-    font-size: 20px;
-}
-}
-
-@media (max-width: 350px) {
-.link {
-    font-size: 15px;
-}
 }

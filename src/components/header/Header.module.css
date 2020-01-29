@@ -2,14 +2,21 @@
     composes: center from '../../common/Common.css';
     align-items: stretch;
     height: 70px;
-    background: white;
+    background: #f3f3f3;
     position: fixed;
     width: 100%;
     z-index: 3;
     opacity: 0.9;
+    visibility: visible;
 }
 
 .container {
     composes: container from "../../common/Common.css";
     width: 100%;
+}
+
+@media (max-width: 450px) {
+    .header {
+        visibility: hidden;
+    }
 }
