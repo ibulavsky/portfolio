@@ -1,4 +1,5 @@
 import JSIcon from "../assets/Image/Icons/whiteIcon/jsWhiteItem.gif"
+import TSIcon from "../assets/Image/Icons/whiteIcon/tsWhiteIcon.gif"
 import ReactIcon from "../assets/Image/Icons/whiteIcon/reactWhiteIcon.gif"
 import ReduxIcon from "../assets/Image/Icons/whiteIcon/reduxWhiteIcon.gif"
 import HTMLIcon from "../assets/Image/Icons/whiteIcon/htmlWhiteIcon.gif"
@@ -6,6 +7,7 @@ import CSSIcon from "../assets/Image/Icons/whiteIcon/cssWhiteIcon.gif"
 import GitIcon from "../assets/Image/Icons/whiteIcon/githubWhiteItem.gif"
 
 import JSBlackIcon from "../assets/Image/Icons/blackIcon/jsBlackItem.gif"
+import TSBlackIcon from "../assets/Image/Icons/blackIcon/tsBlackItem.gif"
 import ReactBlackIcon from "../assets/Image/Icons/blackIcon/reactBlackIcon.gif"
 import ReduxBlackIcon from "../assets/Image/Icons/blackIcon/reduxBlackIcon.gif"
 import HTMLBlackIcon from "../assets/Image/Icons/blackIcon/htmlBlackIcon.gif"
@@ -21,6 +23,12 @@ const initialState = {
             description: '',
             icon: JSIcon,
             blackIcon: JSBlackIcon
+        },
+        {
+            title: 'TS',
+            description: '',
+            icon: TSIcon,
+            blackIcon: TSBlackIcon
         },
         {
             title: 'React',

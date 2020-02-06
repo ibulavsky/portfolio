@@ -2,6 +2,7 @@ import React from "react"
 
 import CounterImg from "../assets/Image/projects/counterIcon.svg"
 import WishesListsImg from "../assets/Image/projects/whishesList.jpg"
+import ToDoListsImg from "../assets/Image/projects/ToDoList.jpg"
 import AuthenticationImg from '../assets/Image/projects/authentication.png'
 import SocialNetworkImg from '../assets/Image/projects/socialNetwork.jpg'
 import TemplatesTypesriptImg from '../assets/Image/projects/templateTypescript.png'
@@ -12,9 +13,16 @@ export const SET_PROJECT = 'PORTFOLIO/SET_PROJECT';
 const initialState = {
     projects: [
         {
-            title: 'WishesList',
-            bg: WishesListsImg,
-            description: 'UI -> React, BLL -> Redux'
+            title: 'ToDoList (online) in progress',
+            bg: ToDoListsImg,
+            url: 'https://ibulavsky.github.io/to-do-lists-online/',
+            gitUrl: 'https://github.com/ibulavsky/to-do-lists-online',
+            description: <>
+                This project implements To-Do lists.
+                User's data is stored in <b>server</b>.
+                The <b>axios</b> library is used for ajax requests, and <b>redux</b> is the bll level.
+                This project uses <b>Ant.design</b>.
+                The UI is implemented on functional components with <b>hooks</b> of <b>react</b>.</>
         },
         {
             title: 'WishesList (localStorage)',
@@ -28,7 +36,7 @@ const initialState = {
                 <b> Redux</b> is the bll level.</>
         },
         {
-            title: 'Templates (typescript)',
+            title: 'Templates (typescript) in progress',
             bg: TemplatesTypesriptImg,
             url: 'https://github.com/ibulavsky/register_login',
             gitUrl: 'https://github.com/ibulavsky/register_login',

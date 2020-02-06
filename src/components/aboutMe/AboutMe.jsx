@@ -11,11 +11,11 @@ const AboutMe = () => (
             <div className={styles.description}>
                 <img alt='Igor' src={myPhoto} className={styles.photo}/>
                 <div align='justify'>My name is Igor. I'm 25 years old.
-                    I graduated from Belarussian National Technical University in 2016. I am working as design
+                    I graduated from Belarussian National Technical University in 2016. I am working as a design
                     engineer.
-                    I fond of front-end development. I am attending courses, which called "it-incubator". I know js,
-                    typescript, react, css.
-                    Also I like to spend free time with my friends.
+                    I fond of front-end development. I am attending the courses, which called "it-incubator". I know JS,
+                    TypeScript, React, CSS.
+                    Also, I like to spend free time with my friends.
                 </div>
             </div>
         </Fade>
